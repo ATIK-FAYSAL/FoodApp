@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgRestaurant"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/b"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgRestaurant"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/txtRestName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Restaurant name"
+                tools:text="Star kabab"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twenty"/>
+
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:isIndicator="true"
+                android:numStars="6"
+                android:stepSize="1"
+                android:theme="@style/RatingBarStyle"/>
+
+            <TextView
+                android:id="@+id/txtRestAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="29/1 toma vilaa,Shukrabad,dhanmondi,Dhaka"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/txtRestType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Fast food"
+                android:padding="5dp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

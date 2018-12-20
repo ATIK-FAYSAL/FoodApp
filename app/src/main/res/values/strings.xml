@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+
+    <string name="encryptionKey">A9F5E0D2B1A8CD76</string><!--Encryption key-->
+
+    <!--Facebook api-->
+
+    <string name="FACEBOOK_APP_ID">609580119478229</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">2fe0d2335e59bfc48eeffaae4086c6a7</string>
+    <string name="permissions_receive_sms_title">Read SMS Code</string>
+    <string name="permissions_receive_sms_message">Grant permission to read your SMS code from your device to pre-fill.</string>
+    <string name="permissions_read_phone_state_title">Read Phone Number</string>
+    <string name="permissions_read_phone_state_message">
+        Grant permission to read your phone number from your device to pre-fill.
+    </string>
+
+
+    <string-array name="country">
+
+        <item>bangladesh</item>
+    </string-array>
+
+    <string-array name="interested_area">
+
+        <item>bangladesh</item>
+    </string-array>
+
+
+    <!--error message-->
+    <string name="invalidUserName">Username already taken,please try again with another Username</string>
+    <string name="invalidEmail">Email already exist,please try again with another email</string>
+    <string name="invalidBoth">Username and Email both are already exist,please retry</string>
+    <string name="unknown">Something went wrong,please try again</string>
+    <string name="offline">Please turn on your internet connection</string>
+    <string name="nullPointerException">Something is wrong ! Please make sure all of your information are valid and try again</string>
+    <string name="invalidInfo">Please insert valid information and try again</string>
+
+    <!--url links-->
+
+    <string name="dataValidation">http://192.168.56.1/foodApp/api/dataValidation.php</string>
+    <string name="registration">http://192.168.56.1/foodApp/api/authentication.php</string>
+    <string name="address">http://diualumni.bdtechnosoft.com/diuAlumni/images/</string>
+
+
+</resources>

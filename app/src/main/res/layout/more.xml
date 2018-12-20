@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorE"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@color/white">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/proPic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Atik Faysal"
+                    android:text="Atik Faysal"
+                    android:textColor="@color/colorA"
+                    android:textSize="@dimen/eighteen"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/proPic"/>
+
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="+8801835897172"
+                    android:text="+8801835897172"
+                    android:textColor="@color/colorC"
+                    android:textSize="@dimen/eighteen"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/txtName"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:paddingStart="5dp">
+
+                <TextView
+                    android:id="@+id/txtOptHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_home"
+                    android:drawablePadding="25dp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtOptProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_profile"
+                    android:drawablePadding="25dp"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtOptPromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Promotion"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_promo"
+                    android:drawablePadding="25dp"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtOptShopRest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shop and Restaurants"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_store"
+                    android:drawableRight="@drawable/icon_down"
+                    android:drawablePadding="25dp"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:padding="5dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtOptRestaurant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Restaurants"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twenty"
+                        android:layout_marginStart="@dimen/twenty"
+                        android:drawableLeft="@drawable/icon_restaurant"
+                        android:drawablePadding="25dp"
+                        android:layout_marginTop="@dimen/twelve"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/txtOptSuperShop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Super shop"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twenty"
+                        android:drawableLeft="@drawable/icon_shop"
+                        android:layout_marginStart="@dimen/twenty"
+                        android:drawablePadding="25dp"
+                        android:layout_marginTop="@dimen/twelve"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/txtOptShop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twenty"
+                        android:drawableLeft="@drawable/icon_shop"
+                        android:layout_marginStart="@dimen/twenty"
+                        android:drawablePadding="25dp"
+                        android:layout_marginTop="@dimen/twelve"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtOptReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_review"
+                    android:drawablePadding="25dp"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtOptOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Offers"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_offer"
+                    android:drawablePadding="25dp"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:paddingStart="5dp">
+
+                <TextView
+                    android:id="@+id/txtOptSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Setting"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_setting"
+                    android:drawablePadding="25dp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtOptFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_feedback"
+                    android:drawablePadding="25dp"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtOptAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_about"
+                    android:drawablePadding="25dp"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:padding="5dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:paddingStart="5dp">
+
+                <TextView
+                    android:id="@+id/txtOptHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Help and support"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:drawableLeft="@drawable/icon_help"
+                    android:drawablePadding="25dp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtOptSignOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign out"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/icon_sign_out"
+                    android:drawablePadding="25dp"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:padding="5dp"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

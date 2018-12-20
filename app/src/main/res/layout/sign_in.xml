@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imgLogo">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/inEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/eighteen"
+                        android:hint="Email"
+                        android:drawableLeft="@drawable/icon_mail"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="15dp"
+                        android:textColor="@color/colorC"
+                        tools:text="atik@gmail.com"
+                        android:backgroundTint="@color/colorD" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/inPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/eighteen"
+                        android:hint="Password"
+                        android:drawableLeft="@drawable/icon_pass"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="15dp"
+                        android:textColor="@color/colorC"
+                        tools:text="atik@gmail.com"
+                        android:backgroundTint="@color/colorD"
+                        android:layout_marginTop="10dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/cRememberMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/eighteen"
+                    android:gravity="center_vertical"
+                    android:text="Remember me"
+                    android:layout_marginStart="25dp"
+                    android:textColor="@color/colorC"
+                    android:backgroundTint="@color/colorC"
+                    android:layout_marginTop="15dp"/>
+
+
+                <Button
+                    android:id="@+id/bSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Sign in"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="60dp"
+                    android:elevation="10dp"
+                    android:background="@drawable/button_sign_in"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="30dp"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtForgetPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget password"
+                android:layout_below="@+id/linear1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorC"
+                android:clickable="true"
+                android:textSize="@dimen/fifteen"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtForgetPass"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="25dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgFacebook"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/logo_facebook"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgGoogle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo_gmail"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp">
+
+
+                <TextView
+                    android:id="@+id/txtText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account? "
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/fifteen" />
+
+
+                <TextView
+                    android:id="@+id/txtSingUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorC"
+                    android:clickable="true"
+                    android:textSize="@dimen/fifteen" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

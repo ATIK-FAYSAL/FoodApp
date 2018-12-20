@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.atikfaysal.foodapp">
+
+
+    <!--for internet connection-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--for select images from gallery or storage-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--read user contacts number for promotion-->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!--for user and device current location-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--for send promotional sms and verification code-->
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme1"
+        tools:ignore="GoogleAppIndexingWarning">
+        
+        
+        <activity android:name=".others.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".main.SignIn"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTheme"/>
+
+        <activity android:name=".main.Registration"
+            android:screenOrientation="portrait"
+            android:label="Registration"
+            android:theme="@style/Theme1"/>
+
+
+        <activity android:name=".main.HomePage"
+            android:screenOrientation="portrait"
+            android:label="Food App"
+            android:theme="@style/Theme1"/>
+
+        <meta-data android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity" />
+
+        <meta-data android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
+            android:value="false"/>
+        
+    </application>
+
+</manifest>

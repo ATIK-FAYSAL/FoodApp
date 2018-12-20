@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorE"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@color/white">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/proPic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Atik Faysal"
+                    android:text="Atik Faysal"
+                    android:textColor="@color/colorA"
+                    android:textSize="@dimen/eighteen"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/proPic"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Info"
+                android:padding="5dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/fourteen"
+                android:textColor="@color/colorC"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:padding="3dp"
+                    android:textSize="@dimen/fourteen"
+                    android:textColor="@color/colorF"/>
+
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Atik1404"
+                    android:text="Atik1404"
+                    android:padding="5dp"
+                    android:textSize="@dimen/eighteen"
+                    android:textColor="@color/black"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:padding="3dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/fourteen"
+                    android:textColor="@color/colorF"/>
+
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="atikfasal@gmail.com"
+                    android:text="atikfasal@gmail.com"
+                    android:padding="5dp"
+                    android:textSize="@dimen/eighteen"
+                    android:textColor="@color/black"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:padding="3dp"
+                    android:textSize="@dimen/fourteen"
+                    android:textColor="@color/colorF"/>
+
+
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="+8801835897172"
+                    android:text="+8801835897172"
+                    android:padding="5dp"
+                    android:textSize="@dimen/eighteen"
+                    android:textColor="@color/black"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:padding="3dp"
+                            android:textSize="@dimen/fourteen"
+                            android:textColor="@color/colorF"/>
+
+
+                        <TextView
+                            android:id="@+id/txtGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="Male"
+                            android:text="Male"
+                            android:padding="5dp"
+                            android:textSize="@dimen/eighteen"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth"
+                            android:padding="3dp"
+                            android:textSize="@dimen/fourteen"
+                            android:textColor="@color/colorF"/>
+
+
+                        <TextView
+                            android:id="@+id/txtDob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="2018-12-18"
+                            android:text="2018-12-18"
+                            android:padding="5dp"
+                            android:textSize="@dimen/eighteen"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:layout_marginTop="10dp"
+                    android:padding="3dp"
+                    android:textSize="@dimen/fourteen"
+                    android:textColor="@color/colorF"/>
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Dhanmondi,Shukrabad,Dhaka"
+                    android:text="Dhanmondi,Shukrabad,Dhaka"
+                    android:padding="5dp"
+                    android:textSize="@dimen/eighteen"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bSaveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:background="@drawable/button_sign_in"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
